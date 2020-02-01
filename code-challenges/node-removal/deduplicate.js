@@ -6,11 +6,9 @@ const removeNode = (list) => {
   let prev;
   while(curr) {
     if(!hashSet.has(curr.value)) {
-      if(curr) {console.log(`Current node is ${curr.value}`)};
       prev = curr;
       hashSet.add(curr.value);
     } else {
-      if(curr) {console.log(`Current node is already in hash set as ${curr.value}`)};
       prev.next = curr.next;
       curr = curr.next;
     }
