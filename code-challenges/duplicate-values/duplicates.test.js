@@ -4,7 +4,7 @@ const { arrays, arrayDuplicates } = require('../../test-values');
 const duplicates = require('./duplicates');
 
 describe('Duplicate values tests', () => {
-  it('should return with text if all values are unique', () => {
+  xit('should return with text if all values are unique', () => {
     // Arrange
     let array1 = arrays[0];
     let array2 = arrays[1];
@@ -30,7 +30,7 @@ describe('Duplicate values tests', () => {
     expect(result6).toBe('No duplicates found.');
   });
 
-  it('should return an array with strings stating how many times a duplicate number occured', () => {
+  it('should return an array with arrays that have the duplicated value first, and the amount of times they occur second', () => {
     // Arrange
     let array1 = [1,2,3,4,4,4,5,6,7];
     let array2 = [1,1,1,1,1,1,1,1,2,3,4,5,6];
@@ -38,9 +38,11 @@ describe('Duplicate values tests', () => {
     // Act
     let result1 = duplicates(array1);
     let result2 = duplicates(array2);
+    let result3 = duplicates(arrayDuplicates);
 
     // Assert
-    expect(result1).toEqual(['The number 4 occured 3 times.']);
-    expect(result2).toEqual(['The number 1 occured 8 times.']);
+    expect(result1).toEqual(['4 occurs 3 times.']);
+    expect(result2).toEqual(['1 occurs 8 times.']);
+    expect(result3).toEqual(['1 occurs 8 times.', '2 occurs 8 times.', '3 occurs 8 times.', '4 occurs 8 times.', '5 occurs 8 times.', '6 occurs 8 times.', '7 occurs 8 times.', '8 occurs 8 times.']);
   });
 });
