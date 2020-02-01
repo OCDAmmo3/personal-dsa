@@ -29,4 +29,18 @@ describe('Duplicate values tests', () => {
     expect(result5).toBe('No duplicates found.');
     expect(result6).toBe('No duplicates found.');
   });
+
+  it('should return an array with strings stating how many times a duplicate number occured', () => {
+    // Arrange
+    let array1 = [1,2,3,4,4,4,5,6,7];
+    let array2 = [1,1,1,1,1,1,1,1,2,3,4,5,6];
+
+    // Act
+    let result1 = duplicates(array1);
+    let result2 = duplicates(array2);
+
+    // Assert
+    expect(result1).toEqual(['The number 4 occured 3 times.']);
+    expect(result2).toEqual(['The number 1 occured 8 times.']);
+  });
 });
