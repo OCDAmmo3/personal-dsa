@@ -10,17 +10,14 @@ const mergeLists = (list1, list2) => {
   while(curr1 !== null || curr2 !== null) {
     if(newList.length === 0) {
       newList.insert(curr1.value);
-      console.log(curr1.value, newList.toString());
       curr1 = curr1.next;
     }
     if(curr2 !== null) {
       newList.append(curr2.value);
-      console.log(curr2.value, newList.toString());
       curr2 = curr2.next;
     }
     if(curr1 !== null) {
       newList.append(curr1.value);
-      console.log(curr1.value, newList.toString());
       curr1 = curr1.next;
     }
   }

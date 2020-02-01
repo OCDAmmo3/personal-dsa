@@ -1,3 +1,5 @@
+const LinkedList = require('./structures/linked-lists/linked-lists');
+
 /*
 ===========================
 ARRAYS WITH NUMBERS
@@ -111,6 +113,24 @@ const matrixArraysMixed = [
   [31,'thirty two',33,'thirty four',35,'thirty six',37,'thirty eight',39,'forty']
 ]
 
+const insertManyUnique = () => {
+  let newList = new LinkedList();
+  for(let i = 0; i < 10; i++) {
+    newList.insert(i + 1);
+  }
+  return newList;
+}
+
+const insertManySimilar = (list) => {
+  let newList = new LinkedList();
+  for(let i = 0; i < 5; i++) {
+    for(let j = 0; j < 5; j++) {
+      newList.insert(i + 1);
+    }
+  }
+  return newList;
+}
+
 module.exports = {
-  arrays, arrayDuplicates, wordArrayAlphabet, wordArrayDoubles, wordArrayLengths, wordArrayPalindromes, cat, dog, sentence1, sentence2, sentence3, sentence4,matrixNumbersOnly, matrixMixedArrays, matrixArraysMixed
+  arrays, arrayDuplicates, wordArrayAlphabet, wordArrayDoubles, wordArrayLengths, wordArrayPalindromes, cat, dog, sentence1, sentence2, sentence3, sentence4,matrixNumbersOnly, matrixMixedArrays, matrixArraysMixed, insertManyUnique, insertManySimilar
 }

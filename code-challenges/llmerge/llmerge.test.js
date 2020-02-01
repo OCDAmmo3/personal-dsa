@@ -26,5 +26,7 @@ describe('Merging of two linked lists test', () => {
     expect(list2.toString()).toEqual('1,4,5');
     expect(list3.toString()).toEqual('1,6,7');
     expect(result1.toString()).toEqual('1,1,2,4,3,5');
+    expect(result2.toString()).toEqual('1,1,2,6,3,7');
+    expect(result3.toString()).toEqual('1,1,1,1,2,2,4,6,3,3,5,7');
   })
 })
