@@ -7,7 +7,7 @@ ARRAYS WITH NUMBERS
 const arrayMaker10 = () => {
   let array = [];
   for(let i = 0; i < 10; i++) {
-    array.push(i);
+    array.push(i + 1);
   }
   return array;
 }
@@ -15,7 +15,7 @@ const arrayMaker10 = () => {
 const arrayMaker100 = () => {
   let array = [];
   for(let i = 0; i < 100; i++) {
-    array.push(i);
+    array.push(i + 1);
   }
   return array;
 }
@@ -23,7 +23,7 @@ const arrayMaker100 = () => {
 const arrayMaker1000 = () => {
   let array = [];
   for(let i = 0; i < 1000; i++) {
-    array.push(i);
+    array.push(i + 1);
   }
   return array;
 }
@@ -31,7 +31,7 @@ const arrayMaker1000 = () => {
 const arrayMaker10000 = () => {
   let array = [];
   for(let i = 0; i < 10000; i++) {
-    array.push(i);
+    array.push(i + 1);
   }
   return array;
 }
@@ -39,7 +39,7 @@ const arrayMaker10000 = () => {
 const arrayMaker100000 = () => {
   let array = [];
   for(let i = 0; i < 100000; i++) {
-    array.push(i);
+    array.push(i + 1);
   }
   return array;
 }
@@ -47,7 +47,7 @@ const arrayMaker100000 = () => {
 const arrayMaker1000000 = () => {
   let array = [];
   for(let i = 0; i < 1000000; i++) {
-    array.push(i);
+    array.push(i + 1);
   }
   return array;
 }
